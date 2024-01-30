@@ -47,3 +47,7 @@ table {
     text-decoration: none;
     border:none;
 }
+
+body  * button  {
+	cursor: pointer;
+}

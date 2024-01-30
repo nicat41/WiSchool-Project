@@ -1,4 +1,51 @@
 .container {
-    width: 1200px;
-    margin: auto 0px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.img-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.relative {
+  position: relative;
+}
+
+.img-star {
+  width: 18px;
+  height: 18px;
+}
+
+.img-user {
+  width: 16px;
+  height: 16px;
+}
+
+.margin-bottom-100 {
+  margin-bottom: 100px;
+}
+
+.border-top-radius {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+  padding: 13px;
+  border-radius: 30px;
+  background: #dff;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
