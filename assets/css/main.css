@@ -410,6 +410,7 @@
   font-size: 48px;
   font-weight: 600;
   padding-bottom: 24px;
+  line-height: normal;
 }
 .education .flex-box {
   display: flex;
