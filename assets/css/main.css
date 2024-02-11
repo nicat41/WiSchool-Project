@@ -648,3 +648,16 @@
   color: var(--bg-primary);
   font-weight: 600;
 }
+
+@media  screen and (max-width: 600px) and (min-width:380px) {
+  body{
+    overflow: hidden;
+
+  }
+
+  .necessary  {
+    display: none;
+  }
+
+  
+}
