@@ -824,8 +824,6 @@
     background: #09b451;
   }
 
-  /* //////////////////////////////////////////////////////////////////////////////////////////////// */
-
   .cartegories .content-title {
     display: flex;
     justify-content: space-between;
@@ -868,8 +866,9 @@
 
   .cartegories .favourite .box .profession span {
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
+    padding: 0px;
     line-height: normal;
   }
   .figure-left {
@@ -881,11 +880,11 @@
   .popular .courses {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 64px;
+    padding-bottom: 25px;
   }
 
   .popular .courses .title {
-    font-size: 32px;
+    font-size: 16px;
     font-weight: 600;
     line-height: normal;
     text-transform: capitalize;
@@ -894,23 +893,28 @@
   .popular .courses .sort-by {
     display: flex;
     align-items: center;
-    padding: 8px 16px;
+    padding: 4px 8px;
     border-radius: 50px;
     background: #09b451;
-    gap: 10px;
+    gap: 1px;
   }
 
   .popular .courses .sort-by .text {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 400;
     color: #fff;
   }
+  .popular .courses .sort-by .img-Arrow {
+    width: 17px;
+    height: 17px;
+  }
+  /* //////////////////////////////////////////////////////////////////////////////////////////////// */
 
   .specialties {
     display: grid;
-    grid-template-columns: repeat(3, 378px);
-    grid-template-rows: repeat(1, 400px);
-    gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 16px;
   }
 
   .specialties .box {
@@ -923,46 +927,54 @@
   }
 
   .specialties .box .specialties-name {
-    padding: 20px 18px 40px 18px;
+    padding: 0px 18px 8px 18px;
     display: flex;
-    align-items: start;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
   }
-
+  .specialties .box .specialties-name .title .Marketing {
+    padding-right: 80px;
+    white-space: nowrap;
+  }
   .specialties .box .specialties-name .title {
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 500;
     text-transform: capitalize;
-    line-height: normal;
+    line-height: 20px;
+    word-break: break-all;
+    padding-right: 10px;
   }
 
   .specialties .box .specialties-name .star {
-    padding-top: 8px;
-    display: inline-flex;
-    align-items: center;
-    column-gap: 6px;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    column-gap: 4px;
     padding-left: 2px;
   }
 
   .specialties .box .specialties-name .star span {
     font-weight: 400;
     line-height: normal;
+    font-size: 8px;
   }
 
   .specialties .box .weeks {
-    padding: 0px 24px 28px 24px;
-    display: flex;
+    padding: 40px 16px 10px 16px;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
   }
 
   .specialties .box .weeks .week-box {
     display: inline-flex;
-    column-gap: 16px;
+    column-gap: 5px;
   }
   .specialties .box .weeks .week-box .text {
     font-weight: 500;
     line-height: normal;
+    font-size: 12px;
   }
 
   .specialties .box .weeks .user-box {
@@ -977,9 +989,12 @@
   }
 
   .specialties .box .weeks .money {
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--bg-primary);
+    position: relative;
+    bottom: 30px;
+    right: 155px;
   }
 
   .hours .title {
