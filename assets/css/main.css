@@ -261,6 +261,7 @@
   grid-template-columns: repeat(3, 378px);
   grid-template-rows: repeat(1, 400px);
   gap: 32px;
+  padding: 0px;
 }
 
 .specialties .box {
@@ -702,8 +703,6 @@
     z-index: 10;
     background-color: #e4ffff;
     position: absolute;
-    /* top: 50px; */
-
     right: -0px;
   }
 
@@ -808,7 +807,11 @@
     justify-content: start;
     align-items: center;
   }
-
+  .activities .box:last-child {
+    position: relative;
+    left: 50%;
+    right: 50%;
+  }
   .activities .box .figure-activities {
     width: 35px;
     height: 35px;
@@ -908,12 +911,11 @@
     width: 17px;
     height: 17px;
   }
-  /* //////////////////////////////////////////////////////////////////////////////////////////////// */
 
   .specialties {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows:  auto;
+    grid-template-rows: auto;
     gap: 16px;
   }
 
@@ -932,7 +934,7 @@
     align-items: center;
     justify-content: center;
   }
-  .specialties .box .specialties-name .title .Marketing {
+  .specialties .box .specialties-name .title .Marketing-box {
     padding-right: 80px;
     white-space: nowrap;
   }
@@ -998,44 +1000,32 @@
   }
 
   .hours .title {
-    padding-bottom: 64px;
-    font-size: 32px;
+    padding-bottom: 24px;
+    font-size: 16px;
     font-weight: 600;
     line-height: normal;
     color: #333;
   }
 
   .icon-left {
-    position: absolute;
-    left: 24px;
-    top: 20%;
-    width: 60px;
-    height: 60px;
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 100px;
+    display: none;
   }
 
   .icon-right {
-    position: absolute;
-    right: 24px;
-    top: 20%;
-    width: 60px;
-    height: 60px;
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 100px;
+    display: none;
   }
 
   .Life .title {
-    padding-bottom: 75px;
-    font-size: 32px;
+    padding-top: 48px;
+    padding-bottom: 32px;
+    font-size: 16px;
     font-weight: 600;
     line-height: normal;
   }
   .education {
     display: flex;
-    padding-right: 100px;
+    padding-right: 0px;
+    flex-wrap: wrap;
   }
 
   .education-img {
@@ -1069,19 +1059,22 @@
     padding-top: 5px;
   }
   .education .box:last-child {
-    padding-left: 98px;
+    padding-left: 0px;
+    padding-bottom: 50px;
     color: #333;
   }
 
   .education .box:last-child .title {
-    font-size: 48px;
+    font-size: 24px;
     font-weight: 600;
     padding-bottom: 24px;
     line-height: normal;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 400px;
   }
   .education .flex-box {
     display: flex;
-    column-gap: 24px;
     align-items: center;
   }
   .img-icons {
@@ -1090,9 +1083,9 @@
   }
 
   .education .flex-box .text {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: normal;
+    line-height: 21px;
   }
 
   .education .box:last-child .flex-box:not(:last-child) {
@@ -1105,31 +1098,39 @@
     font-weight: 600;
     color: #242243;
     padding-bottom: 13px;
+    display: none;
   }
   .img-vector {
     position: absolute;
-    bottom: 125px;
-    left: 5px;
+    bottom: 90px;
+    left: -30;
+    width: 110px;
   }
   .img-profession {
-    width: 70px;
-    height: 70px;
-    border-radius: 40px;
+    width: 28px;
+    height: 28px;
+    border-radius: 16px;
   }
 
   .Students {
-    display: inline-flex;
-    column-gap: 34px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Students .box:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
   }
   .Students .box .title {
-    font-size: 48px;
+    font-size: 24px;
     font-weight: 700;
     line-height: normal;
     text-transform: capitalize;
     font-family: "Open Sans", sans-serif;
     padding-bottom: 60px;
     padding-top: 63px;
-    width: 382px;
+    width: 183px;
   }
   .Students .box .title span {
     color: var(--bg-primary);
@@ -1152,9 +1153,9 @@
     flex-shrink: 0;
   }
   .profession-box {
-    padding: 59px 45px 48px 45px;
-    width: 480px;
-    height: 352px;
+    padding: 16px 14px 0px 14px;
+    width: 183px;
+    height: 155px;
     border-radius: 10px;
     background: #fff;
     box-shadow: 0px 0px 20px 0px rgba(226, 226, 226, 0.25);
@@ -1162,33 +1163,36 @@
 
   .box:last-child .second-box {
     display: inline-flex;
-    column-gap: 32px;
-    padding: 41px 26px 50px 26px;
+    column-gap: 16px;
+    padding: 0px;
   }
   .Students .main-box {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     column-gap: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
     font-family: "Open Sans", sans-serif;
   }
   .Students .main-box .name {
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 700;
     margin-bottom: 6px;
   }
   .Students .main-box .profession {
     color: var(--bg-primary);
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 400;
   }
 
   .Students .second-box .text {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 400;
     color: #333;
-    line-height: 30px;
+    line-height: 16px;
+  }
+  .Students .second-box .text span {
+    display: none;
   }
   .meet {
     margin-bottom: 200px;
@@ -1197,24 +1201,31 @@
     font-size: 32px;
     font-weight: 600;
     padding-bottom: 64px;
+    padding-top: 48px;
   }
 
   .meet .instructors {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(1, 371.494px);
-    column-gap: 32px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(1, auto);
+    gap: 32px;
   }
   .figure-instructors {
-    padding-top: 30px;
-    padding-bottom: 17px;
+    padding-top: 14px;
+    padding-bottom: 7px;
   }
   .img-instructors {
-    width: 113.981px;
-    height: 113.981px;
-    border-radius: 113.981px;
+    width: 53px;
+    height: 53px;
+    border-radius: 64px;
   }
-
+  .instructors .box:last-child {
+    position: relative;
+    left: 150px;
+    box-shadow: none;
+    border-radius: 5.988px;
+    box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
+  }
   .instructors .box {
     display: flex;
     align-items: center;
@@ -1224,26 +1235,27 @@
   }
 
   .instructors .box .name {
-    line-height: 136.5%;
-    font-size: 20px;
+    line-height: 16.38px;
+    font-size: 12px;
     font-weight: 600;
-    padding-bottom: 6px;
+    padding-bottom: 1px;
   }
 
   .instructors .box .Position {
     line-height: 136.5%;
     color: var(--bg-primary);
     font-weight: 500;
-    padding-bottom: 35px;
-    font-size: 17px;
+    padding-bottom: 16px;
+    font-size: 8px;
   }
 
   .instructors .box .text {
-    line-height: 26px;
+    line-height: 8px;
     color: #333;
     font-weight: 400;
     text-align: center;
-    padding: 0px 45px 67px 45px;
+    padding: 0px 45px 0px 45px;
+    line-height: 18px;
   }
 
   .have {
@@ -1266,36 +1278,42 @@
     padding-bottom: 76px;
     position: relative;
     z-index: 10;
+    padding: 0px;
+    padding-top: 80px;
   }
   .have .step-box:first-child {
-    padding-right: 110px;
+    padding-right: 0px;
   }
 
   .have .step-box:first-child .img-Operator {
-    margin-top: -72px;
+    display: none;
   }
   .have .step-box:last-child .title {
-    font-size: 42px;
+    font-size: 24px;
     font-weight: 700;
     line-height: normal;
     text-transform: capitalize;
     padding-bottom: 24px;
     font-family: "Open Sans", sans-serif;
+    text-align: center;
+
   }
 
   .have .step-box:last-child .text {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
     line-height: normal;
     text-transform: capitalize;
-    padding-bottom: 90px;
+    padding-bottom: 64px;
     font-family: "Open Sans", sans-serif;
+    text-align: center;
   }
-
   .have .step-box:last-child .btn-flex {
     display: flex;
+    justify-content: center;
     column-gap: 32px;
     font-family: "Source Sans 3", sans-serif;
+    padding-bottom: 70px;
   }
 
   .have .step-box:last-child .btn-flex .green-btn {

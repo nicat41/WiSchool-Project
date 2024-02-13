@@ -91,7 +91,7 @@
 }
 
 .main-conatiner {
-  padding-top: 123px;
+  padding-top: 120px;
   display: flex;
   color: #fff;
   padding-bottom: 110px;
@@ -111,6 +111,7 @@
   text-transform: lowercase;
   padding-right: 30px;
   padding-bottom: 30px;
+  
 }
 
 .icons-footer {
@@ -263,28 +264,34 @@ display: none;
   background-color: rgb(0, 0, 0);
   display: block;
 }
-
+.footer .container {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 63px;
+}
 .main-conatiner {
-  padding-top: 123px;
+  padding-top: 0px;
   display: flex;
   color: #fff;
-  padding-bottom: 110px;
-  column-gap: 90px;
+  padding-bottom: 0px;
+  column-gap: 50px;
+  flex-direction: column-reverse;
+}
+
+.main-conatiner .footer-logo {
+  padding-top: 30px;
+  padding-bottom: 63px;
 }
 .main-conatiner .footer-logo .title {
   font-size: 32.8px;
   font-weight: 600;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   font-family: "Source Sans 3", sans-serif;
+
 }
 
 .main-conatiner .footer-logo .text {
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 1px;
-  text-transform: lowercase;
-  padding-right: 30px;
-  padding-bottom: 30px;
+  display: none;
 }
 
 .icons-footer {
@@ -299,7 +306,9 @@ display: none;
   display: flex;
   column-gap: 80px;
 }
-
+.nav-footer .news {
+  display: none;
+}
 .nav-footer .navbar-footer a {
   display: block;
   white-space: nowrap;
@@ -316,12 +325,13 @@ display: none;
 }
 
 .Subscribe {
-  text-align: center;
+  text-align: start;
   font-weight: 600;
-  line-height: normal;
+  line-height: 21px;
   color: #fff;
-  font-size: 24px;
-  padding-bottom: 17px;
+  font-size: 14px;
+  padding-bottom: 4px;
+  padding-left: 3px;
 }
 .input {
   display: flex;
